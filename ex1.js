@@ -23,8 +23,8 @@ function fib(number){
 }
 
 // The Document Object Model
-//url = document.links.gitlink.href
-//document.write("<p>[*] Your link is: " + url + "</p>")
+// url = document.links.gitlink.href
+// document.write("<p>[*] Your link is: " + url + "</p>")
 
 // But is more convenient .getElementById
 

@@ -24,7 +24,7 @@ function generateTable(data){
     document.getElementById("tableData").appendChild(table)
 }
 
-webData = {pageName: "momo", pageHistory: "3"}
+webData = {pageName: document.location.href, pageHistory: history.length}
 
 function myFunction(){
     generateTable(webData)
