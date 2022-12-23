@@ -97,25 +97,3 @@ function LinkedList(){
         }
     }
 }
-
-list1 = new LinkedList()
-
-list1.addLast(3)
-
-list1.addFirst(32)
-
-list1.addFirst(420)
-
-list1.addLast(25)
-
-list1.addLast(69)
-
-list1.insert(4, 4200000)
-
-
-console.log("[*] Order: ")
-list1.print()
-
-console.log("[*] Reprints: ")
-list1.reverse()
-list1.print()
