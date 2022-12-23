@@ -70,8 +70,6 @@ function LinkedList(){
 
         this.head = this.head.next
 
-        delete temp
-
         this.size -= 1
     }
 

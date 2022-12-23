@@ -7,15 +7,30 @@
     <title>Vector Sum</title>
 
     <!-- JAVASCRIPT -->
-    <!--<script type="text/javascript" src="ex1.js"></script>-->
+    <script type="text/javascript" src="ex5.js"></script>
 </head>
 <body>
     <!-- MENU -->
     <div align="center">
         <h1>Vector Sum</h1>
     </div>
-
     <hr size="3%" color="black" noshade>
+
+    <!-- FORM: VECTOR COMPONENTS -->
+    <div align="center" id="vector_components">
+        <p><label>x0 = </label><input type="text" id="x0_val"><label> y0 = </label><input type="text" id="y0_val"></p>
+        <p><label>x1 = </label><input type="text" id="x1_val"><label> y1 = </label><input type="text" id="y1_val"></p>
+        
+    </div>
+
+    <!-- FORM: BUTTONS -->
+    <div align="center" id="vector_buttons">
+        <input type="button" value="Add" onclick="addComponents()">
+        <input type="button" value="Sum" onclick="toArray()">
+    </div>
+
+    <!-- RESULT -->
+    <div align="center" id="result"></div>
     
 </body>
 </html>
