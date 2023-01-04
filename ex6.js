@@ -27,8 +27,8 @@ function asyncRequest(){
 }
 
 // Async Application
-var params = 'news.com'
-var request = new asyncRequest()
+params = 'url=oreilly.com'
+request = new asyncRequest()
 
 // A POST request is sent to urlpost.php
 request.open("POST", "urlpost.php", true)
@@ -49,9 +49,9 @@ request.onreadystatechange = function(){
     // 2 = Loaded
     // 3 = Interactive
     // 4 = Completed
-    if(this.readyState == 4){
+    if(this.readyState === 4){
         // The 200 means that the call succeeded.
-        if(this.status == 200){
+        if(this.status === 200){
             if(this.responseText != null){
                 document.getElementById('info').innerHTML = this.responseText
             }else{

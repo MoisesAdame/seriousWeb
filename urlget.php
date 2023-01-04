@@ -1,5 +1,5 @@
 <?php
-if(isset($_POST['url'])){
+if(isset($_GET['url'])){
     echo file_get_contents("http://".SanitizeString($_POST['url']))
 }
 
