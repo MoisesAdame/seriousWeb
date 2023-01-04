@@ -1,6 +1,6 @@
 // Author: Moisés Adame-Aguilar
 // Date: January 2, 2023
-// Descrption: Async program
+// Descrption: Async program (POST Request)
 
 // Cross-Browser Async Function
 function asyncRequest(){
