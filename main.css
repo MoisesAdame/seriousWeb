@@ -38,3 +38,23 @@ hr{
     margin: auto;
     margin-top: 10px;
 }
+
+button {
+    padding: 10px 15px;
+    text-align: center;
+    color: #fff;
+    background-color: #460C68;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 6px #999;
+}
+
+button:hover {
+    background-color: #630f93
+}
+
+button:active {
+    background-color: #630f93;
+    box-shadow: 0 3px #666;
+    transform: translateY(4px);
+}
