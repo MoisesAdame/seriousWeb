@@ -22,10 +22,6 @@ function getTime(){
     request.send()
 }
 
-function getTimeLoop(){
-    
-}
-
 function addToParagraph(date){
     document.getElementById('time-paragraph').innerHTML = ''
     document.getElementById('time-paragraph').innerHTML = date
