@@ -13,7 +13,6 @@ function getTime(){
 
             addToParagraph(date)
 
-            getTime()
         }else if(request.readyState === 4){
             alert('Communication error: No data received!')
         }
@@ -21,6 +20,10 @@ function getTime(){
     
     request.open('GET', 'http://worldtimeapi.org/api/timezone/America/Mexico_City')
     request.send()
+}
+
+function getTimeLoop(){
+    
 }
 
 function addToParagraph(date){

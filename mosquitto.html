@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mosquitto Application</title>
+
+    <!-- JAVASCRIPT -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.min.js"></script>
+    <script type="text/javascript" src="ex9_server.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body onload="showRoomsUsers()">
+    <!-- MENU -->
+    <div align="center">
+        <h1>Mosquitto Application</h1>
+    </div>
+    <hr size="3%" color="black" noshade>
+
+    <div align="center">
+        <label>User: </label><input type="text" id="message-box">
+        <br>
+        <label>Room: </label><input type="text" id="room-box">
+        <br>
+
+        <button onclick="connect()">Connect!</button>
+        <button onclick="sendMessage()">Publish!</button>
+    </div>
+
+</body>
+
+<footer>
+    <div align="right">
+        <a id="back_index" href="index.html">Go Back!</a>
+    </div>
+</footer>
+
+</html>

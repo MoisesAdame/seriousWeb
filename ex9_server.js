@@ -1,6 +1,10 @@
 // Author: Moisés Adame-Aguilar
-// Date: January 4, 2023
-// Descrption: Mosquitto connecttion for messaging app.
+// Date: January 5, 2023
+// Descrption: Mosquitto connecttion for messaging app (Server side).
+
+// Loading database
+import dataBase from './rooms.json' assert {type: 'json'};
+
 
 //the host to which we want to connect
 const host = "20.219.162.228";
@@ -9,12 +13,10 @@ const host = "20.219.162.228";
 const port = 1883;
 
 //our topic to publish and receive message
-const topic = "srv/info2";
+const topic = "srv/info";
 
 //variable to hold connection data
 let client;
-
-let payload;
 
 function onConnectionLost(responseObject){
     if (responseObject.errorCode !== 0) {
@@ -73,19 +75,17 @@ function onMessage(mgs){
 }
 
 
-function publish(message, sender){
-	payload = {
-        "data": message,
-        "sender": sender
-    }
+function publish(){
+	var payload = dataBase
+    console.log(payload)
 
-    message = new Paho.MQTT.Message(JSON.stringify(payload))
-	message.destinationName = topic
-    client.send(message)
+    payload = new Paho.MQTT.Message(JSON.stringify(payload))
+	payload.destinationName = topic
+    client.send(payload)
 }
 
-function sendMessage(){
-	var message = document.getElementById('message-box').value
-	publish(message, "me")
-	document.getElementById('message-box').value = ''
+function showRoomsUsers(){
+    connect()
+
+    publish()
 }
