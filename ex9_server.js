@@ -3,7 +3,8 @@
 // Descrption: Mosquitto connecttion for messaging app (Server side).
 
 // Loading database
-import dataBase from './rooms.json' assert {type: 'json'};
+import dataBase from './rooms.json' assert{type: 'json'};
+import fs from 'fs' 
 
 
 //the host to which we want to connect
@@ -84,8 +85,40 @@ function publish(){
     client.send(payload)
 }
 
-function showRoomsUsers(){
-    connect()
+var showRoomsUsers = function(){
+    try{
+        connect()
+        publish()
+    }catch(err){
+        ;// Null statement
+    }
+}
+
+function createOrJoinRoom(){
+    var room = document.getElementById('room-box').value
+    var user = document.getElementById('user-box').value
+    var roomNum = Number(dataBase.roomNum)
+
+    if(room === '' && user !== ''){
+        dataBase['rooms']['r' + (roomNum + 1)] = [user]
+        console.log('Connected to: r' + (roomNum + 1))
+        dataBase.roomNum += 1
+    }else if(room !== '' && user !== ''){
+        (dataBase['rooms'][room]).push(user)
+        console.log('Connected to: ' + room)
+    }
+    //storeJSON()
 
     publish()
 }
+
+/*
+function storeJSON(rawJSON){
+    var stringJSON = JSON.stringify(rawJSON)
+    writeFile('rooms.json', stringJSON, finished)
+}
+*/
+
+document.getElementById('connect-button').addEventListener('click', createOrJoinRoom)
+
+document.querySelector('body').addEventListener('load', showRoomsUsers())

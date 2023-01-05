@@ -10,27 +10,26 @@
 
     <!-- JAVASCRIPT -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.min.js"></script>
-    <script type="text/javascript" src="ex9_server.js"></script>
-
+    <script type="module" src="ex9_server.js"></script>
+    
     <!-- CSS -->
     <link rel="stylesheet" href="main.css">
 </head>
 
-<body onload="showRoomsUsers()">
+<body>
     <!-- MENU -->
     <div align="center">
         <h1>Mosquitto Application</h1>
     </div>
-    <hr size="3%" color="black" noshade>
+    <hr>
 
     <div align="center">
-        <label>User: </label><input type="text" id="message-box">
+        <label>User: </label><input type="text" id="user-box">
         <br>
         <label>Room: </label><input type="text" id="room-box">
         <br>
-
-        <button onclick="connect()">Connect!</button>
-        <button onclick="sendMessage()">Publish!</button>
+        <input type="button" value="Connect!" id="connect-button">
+        <input type="button" value="Publish!" id="publish-button">
     </div>
 
 </body>
