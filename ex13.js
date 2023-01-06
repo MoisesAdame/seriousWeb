@@ -3,20 +3,9 @@
 // Descrption: Deep down in Ajax... Promises?
 
 // Promise: JS Object that links producing code and consuming code.
-// -- Example 1: Calling an API
-
-
-
+// -- Example 1: Calling an API (Not working)
 var promiseTimeAPI = new Promise(function(resolve, reject){
     var request = new XMLHttpRequest()
-    promiseTimeAPI.then(
-        function(value){
-            text2date(value)
-        },
-        function(error){
-            console.log(error)
-        }
-    )
     setInterval(() => {
         request.addEventListener('readystatechange', () => {
             console.log(request.readyState, request.status)
@@ -38,3 +27,11 @@ function text2date(text){
     document.getElementById('time-paragraph').textContent = date
 }
 
+promiseTimeAPI.then(
+    function(value){
+        text2date(value)
+    },
+    function(error){
+        console.log(error)
+    }
+)

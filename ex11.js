@@ -22,4 +22,3 @@ function printTheDate(){
 }
 
 setInterval(printTheDate, 1000)
-
