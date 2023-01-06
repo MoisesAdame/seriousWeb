@@ -11,8 +11,7 @@ function getTime(){
 
             date = new Date(date.utc_datetime)
 
-            addToParagraph(date)
-
+            document.getElementById('time-paragraph').textContent = date
         }else if(request.readyState === 4){
             alert('Communication error: No data received!')
         }
@@ -26,3 +25,9 @@ function addToParagraph(date){
     document.getElementById('time-paragraph').innerHTML = ''
     document.getElementById('time-paragraph').innerHTML = date
 }
+
+function loopGetTime(){
+    setInterval(getTime, 1000)
+}
+
+loopGetTime()
