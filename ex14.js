@@ -23,3 +23,13 @@ myFunction1().then(
 
 // -- Example 2: Await can only be used in async functions
 // It makes the function pause til' the promise gets resolved.
+// ISS Location
+async function printISSLocation(){
+    const apiUrl = 'https://api.wheretheiss.at/v1/satellites/25544'
+    var response = await fetch(apiUrl)
+    var data = await response.json()
+    var {latitude, longitude} = data 
+    console.log(latitude, longitude)
+}
+
+setInterval(printISSLocation, 1000)
