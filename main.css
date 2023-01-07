@@ -58,3 +58,11 @@ button:active {
     box-shadow: 0 3px #666;
     transform: translateY(4px);
 }
+
+#map {
+    width: 80%;
+    height: 400px;
+    align-items: center;
+    border-radius: 4px;
+    margin: auto;
+}
