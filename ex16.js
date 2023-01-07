@@ -60,6 +60,8 @@ class Tree{
             this.inPrint(node.leftNode)
             console.log(node.data)
             this.inPrint(node.rightNode)
+        }else{
+            console.log('Empty Tree')
         }
     }
 
@@ -69,6 +71,8 @@ class Tree{
             console.log(node.data)
             this.prePrint(node.leftNode)
             this.prePrint(node.rightNode)
+        }else{
+            console.log('Empty Tree')
         }
     }
 
@@ -78,19 +82,8 @@ class Tree{
             this.postPrint(node.leftNode)
             this.postPrint(node.rightNode)
             console.log(node.data)
+        }else{
+            console.log('Empty Tree')
         }
     }
 }
-
-var myTree = new Tree()
-
-var arr = [30, 12, 45, 28, 6, 15, 32, 100]
-for(const x of arr){
-    myTree.insert(x)
-}
-
-
-myTree.inPrint()
-
-console.log('Max: ' + myTree.max())
-console.log('Min: ' + myTree.min())
