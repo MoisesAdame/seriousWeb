@@ -24,7 +24,7 @@ function readFile(input) {
 // Function that converts a string to binary.
 function text2binary(text) {
     var output = "" 
-    for (i = 0; i < text.length; i++){
+    for (var i = 0; i < text.length; i++){
         var letter = text[i].charCodeAt(0).toString(2)
         letter = '0'.repeat(8 - letter.length) + letter
         output +=  letter
