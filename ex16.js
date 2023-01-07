@@ -15,6 +15,7 @@ class Tree{
     // Constructot for BST
     constructor(){
         this.root = null
+        this.nodes = 0
     }
 
     // Binary Search Tree Insertion
@@ -30,25 +31,31 @@ class Tree{
         }else if(data > node.data){
             node.rightNode = new Node(data, null, null)
         }
+        this.nodes += 1
+    }
+
+    // Number of nodes inside Tree
+    getNodes(){
+        return this.nodes
     }
 
     // Max element inside Tree
-    max(node = this.root){
+    getMax(node = this.root){
         if(node === null){
             return NaN
         }else if(node.rightNode !== null){
-            return this.max(node.rightNode)
+            return this.getMax(node.rightNode)
         }else{
             return node.data
         }
     }
 
     // Min element inside Tree
-    min(node = this.root){
+    getMin(node = this.root){
         if(node === null){
             return NaN
         }else if(node.leftNode !== null){
-            return this.min(node.leftNode)
+            return this.getMin(node.leftNode)
         }else{
             return node.data
         }
