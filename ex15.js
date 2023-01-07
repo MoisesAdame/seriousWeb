@@ -89,6 +89,5 @@ function distance(loc1, loc2){
     document.getElementById('distance-iss').textContent = 'Distance from you: ' + distance + ' km.'
 }
 
-
 // Calling the function.
 loopLocation()
