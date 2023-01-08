@@ -1,28 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Async Application</title>
+    <title>Website Data</title>
 
     <!-- JAVASCRIPT -->
-    <script type="text/javascript" src="javascript/ex8.js"></script>
+    <!-- Putting it here makes it load before. -->
+    <script type="text/javascript" src="../javascript/ex2.js"></script>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="../css/main.css">
 </head>
 
-<body>
+<body onload="myFunction()">
     <!-- MENU -->
     <div align="center">
-        <h1>Async Application</h1>
+        <h1>Website Data</h1>
     </div>
     <hr>
 
-    <div id="info"></div>
+    <!-- DATA -->
+    <div id="tableData" align="center"></div>
 
 </body>
 
@@ -31,5 +31,4 @@
         <a id="back_index" href="index.html">Go Back!</a>
     </div>
 </footer>
-
 </html>

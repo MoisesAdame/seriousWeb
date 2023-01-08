@@ -12,13 +12,13 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 // Customizing marker's icon.
 var issIcon = L.icon({
-    iconUrl: 'images/issIcon.png',
+    iconUrl: '../images/issIcon.png',
     iconSize: [50, 31.5],
     iconAnchor: [25, 16],
 })
 
 var houseIcon = L.icon({
-    iconUrl: 'images/house.webp',
+    iconUrl: '../images/house.webp',
     iconSize: [35, 25],
     iconAnchor: [17.5, 25],
 })
