@@ -3,14 +3,26 @@
 // Descrption: Introduction to WebSockets (Client)
 
 // Variables
+userName = ''
 const miWebSocket = new WebSocket('ws://localhost:8080')
 const miNuevoMensaje = document.querySelector('#nuevo-mensaje')
 const misRespuestas = document.querySelector('#respuestas')
 
-// Funciones
+// Function for registering the user and changing page.
+function logIn(){
+    var inputUser = document.getElementById('user-box').value
+    if(inputUser === ''){
+        alert('Invalid User Name. Try Again')
+    }else{
+        userName = inputUser
+        console.log(userName)
+        document.getElementById('log-in').innerHTML = ''
+    }
+}
+
+// Funcion that is executed once the connection is open.
 function open () {
-    // Abre conexión
-    console.log("WebSocket abierto.");
+    console.log("WebSocket abierto.")
 }
 
 async function message (evento){

@@ -24,7 +24,6 @@ p{
 input{
     border-radius: 4px;
     border: none;
-    margin: 8px 0;
     color: #460C68;
     border-color: #94bbe9;
     font-family: "Courier New";
@@ -65,4 +64,12 @@ button:active {
     align-items: center;
     border-radius: 4px;
     margin: auto;
+}
+
+#main-layer{
+    margin: 5% 10%;
+    padding: 15%;
+    box-sizing: border-box;
+    background-color: plum;
+    border-radius: 10px;
 }
