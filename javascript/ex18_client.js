@@ -25,12 +25,10 @@ function open () {
     console.log("WebSocket abierto.")
 }
 
+// Function executed once a message has arrived.
 async function message (evento){
-    // Se recibe un mensaje
-    console.log("WebSocket ha recibido un mensaje")
-    // Mostrar mensaje en HTML
-    const mensajeRecibido = await evento.data.text() // Arreglo para Node ya que devuelve Blob. Solo con 'evento.data' debería ser suficiente
-    misRespuestas.innerHTML = misRespuestas.innerHTML.concat(mensajeRecibido, '<br>')
+    var receivedMessage = await evento.data.text()
+    misRespuestas.innerHTML = misRespuestas.innerHTML.concat(receivedMessage, '<br>')
 }
 
 function error (evento) {
