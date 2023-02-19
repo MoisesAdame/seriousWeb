@@ -7,20 +7,19 @@
 // some kind of function argument.
 
 // Functional component that greets the user.
-function Greeting(props){
-    return <p>Hello, {props.name}</p>
-}
+// function Greeting(props){
+//     return <p>Hello, {props.name}</p>
+// }
 
 // Class component that prints a title and the greets.
 let displayData = []
 class FormalGreeting extends React.Component{
     render(){
-        const main = (
-            <div id="greeting">
+        var main = (
+            <>
                 <h1>Welcome!</h1>
-                <Greeting name="moy"/>
-                <button onClick={date}>Write Biang!</button>
-            </div>
+                <button onClick={date}>Time!</button>
+            </>
         )
         return main
     }
@@ -50,6 +49,18 @@ function Image(props){
 }
 
 // -- Events are the same as the HTML DOM events
+// -- Forms they are the same as in HTML.
+function AskName(){
+    var form = (
+        <form>
+            <label>Enter your name:
+                <input type="text"/>
+            </label>
+        </form>
+    )
+
+    return form
+}
 
 // -- React renders everything inside the root, div.
 const root = ReactDOM.createRoot(document.getElementById('root'))

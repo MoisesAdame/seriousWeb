@@ -1,0 +1,15 @@
+{
+  "name": "reactapp",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "An introdution to reactJS.",
+  "main": "home.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Moises Adame-Aguilar",
+  "license": "ISC",
+  "dependencies": {
+    "babel-preset-react": "^6.24.1"
+  }
+}
