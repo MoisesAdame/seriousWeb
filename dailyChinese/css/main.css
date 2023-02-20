@@ -1,0 +1,31 @@
+#root{
+    /* Position */
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    /* Div Specs*/
+    height: 100dvh;
+    width: 100dvw;
+    margin: 0;
+}
+
+#main-character{
+    /* Center Horizontally */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Center Vertically */
+    position: relative;
+    top:30dvh;
+
+    /* Font */
+    font-family: "AR PL UKai CN﻿", "regular script", "kaiti", "kaishu", "zhengshu", "zhengkai", cursive;
+    font-size: 10dvh;
+    color: yellow;
+}
+
+body{
+    background-color: tomato;
+}
