@@ -1,0 +1,30 @@
+.top-container{
+    margin: 0;
+    padding: 2vw;
+    background-color: orange;
+
+    /*REMOVE*/
+    padding: 20px;
+    width: 400px;
+    border: 10px black solid;
+}
+
+.middle-container{
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+
+    /*REMOVE*/
+    border: 20px black solid;
+    margin-left: 460px;
+}
+
+.bottom-container{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+
+    /*REMOVE*/
+    border: 10px black solid;
+    margin-left: 700px;
+}

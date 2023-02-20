@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+}
+
+.top-container{
+    margin: 0;
+    background-color: #9ca9a9;
+}
+
+img{
+    margin: 0;
+}
+
+.middle-container{
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+
+}
+
+.bottom-container{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+}

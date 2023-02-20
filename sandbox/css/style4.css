@@ -1,0 +1,47 @@
+body{
+    margin: 0%;
+}
+
+.top-container{
+    /* DIMENSIONS */
+    height: 200px;
+    width: 200px;
+
+    /* COLOR */
+    background-color: red;
+
+    /* DISPLAY */
+    display: inline-block;
+
+    /* POSITION */
+    position: relative;
+    left: 400px;
+}
+
+.middle-container{
+    /* DIMENSIONS */
+    height: 200px;
+    width: 200px;
+
+    /* COLOR */
+    background-color: yellow;
+
+   /* DISPLAY */
+   display: inline-block;
+}
+
+.bottom-container{
+    /* DIMENSIONS */
+    height: 200px;
+    width: 200px;
+
+    /* COLOR */
+    background-color: green;
+
+    /* DISPLAY */
+    display: inline-block;
+
+    /* POSITION */
+   position: relative;
+   right: 400px;
+}
