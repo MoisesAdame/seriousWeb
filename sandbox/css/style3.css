@@ -1,21 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloock&family=Mynerve&display=swap');
+
 body{
     margin: 0;
+    text-align: center;
+}
+
+h1{
+    font-family: Gloock;
+}
+
+p{
+    font-family: Mynerve;
 }
 
 .top-container{
     margin: 0;
     background-color: #9ca9a9;
+    height: auto;
+    padding: 10px;
+    
 }
 
-img{
-    margin: 0;
+.top-cloud{
+    position: relative;
+    left: 200px;
+}
+
+.bottom-cloud{
+    position: absolute;
 }
 
 .middle-container{
     height: 200px;
     width: 200px;
     background-color: blue;
-
 }
 
 .bottom-container{

@@ -1,0 +1,26 @@
+body{
+    margin: 0;
+}
+
+#background{
+    /* DIMENSIONS */
+    height: 100dvh;
+    width: 100dvw;
+
+    /* COLOR */
+    background-color: burlywood;
+}
+
+#board{
+    /* DIMENSIONS */
+    height: 60dvh;
+    width: 60dvh;
+
+    /* COLOR */
+    background-color: grey;
+
+    /* CENTERING */
+    margin: auto;
+    position: relative;
+    top: 20dvh;
+}
