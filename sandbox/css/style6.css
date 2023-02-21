@@ -23,4 +23,148 @@ body{
     margin: auto;
     position: relative;
     top: 20dvh;
+
+    /* POSITION */
+    z-index: 100;
+}
+
+.board-box{
+    /* DIMENSIONS */
+    height: 19dvh;
+    width: 19dvh;
+
+    /* POSITION */
+    z-index: 1000;
+    
+    /* COLOR */
+    background-color: blueviolet;
+}
+
+#square1{
+    /* POSITION */
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    /* MARGIN */
+    margin: 0.6dvh 0 0 0.6dvh;
+
+    /* BORDER */
+    border-right: 0.6dvh solid black;
+    border-bottom: 0.6dvh solid black;
+}
+
+#square2{
+    /* POSITION */
+    position: absolute;
+    left: 20dvh;
+    top: 0;
+
+    /* MARGIN */
+    margin: 0.6dvh 0 0 0;
+
+    /* BORDER */
+    border-right: 0.6dvh solid black;
+    border-left: 0.6dvh solid black;
+    border-bottom: 0.6dvh solid black;
+}
+
+#square3{
+    /* POSITION */
+    position: absolute;
+    left: 40dvh;
+    top: 0;
+
+    /* MARGIN */
+    margin: 0.6dvh 0.6dvh 0 0;
+
+    /* BORDER */
+    border-left: 0.6dvh solid black;
+    border-bottom: 0.6dvh solid black;
+}
+
+#square4{
+    /* POSITION */
+    position: absolute;
+    left: 0;
+    top: 20dvh;
+
+    /* MARGIN */
+    margin: 0 0.6dvh 0 0.6dvh;
+
+    /* BORDER */
+    border-right: 0.6dvh solid black;
+    border-bottom: 0.6dvh solid black;
+    border-top: 0.6dvh solid black;
+}
+
+#square5{
+    /* POSITION */
+    position: absolute;
+    left: 20dvh;
+    top: 20dvh;
+
+    /* MARGIN */
+    margin: 0;
+
+    /* BORDER */
+    border: 0.6dvh solid black;
+}
+
+#square6{
+    /* POSITION */
+    position: absolute;
+    left: 40dvh;
+    top: 20dvh;
+
+    /* MARGIN */
+    margin: 0 0.6dvh 0 0;
+
+    /* BORDER */
+    border-left: 0.6dvh solid black;
+    border-bottom: 0.6dvh solid black;
+    border-top: 0.6dvh solid black;
+}
+
+#square7{
+    /* POSITION */
+    position: absolute;
+    left: 0;
+    top: 40dvh;
+
+    /* MARGIN */
+    margin: 0 0 0.6dvh 0.6dvh;
+
+    /* BORDER */
+    border-right: 0.6dvh solid black;
+    border-top: 0.6dvh solid black;
+}
+
+#square8{
+    /* POSITION */
+    position: absolute;
+    left: 20dvh;
+    top: 40dvh;
+
+    /* MARGIN */
+    margin: 0 0 0.6dvh 0;
+
+    /* BORDER */
+    border-right: 0.6dvh solid black;
+    border-left: 0.6dvh solid black;
+    border-top: 0.6dvh solid black;
+}
+
+#square9{
+    /* POSITION */
+    position: absolute;
+    left: 40dvh;
+    top: 40dvh;
+
+    /* MARGIN */
+    margin: 0 0.6dvh 0.6dvh 0;
+
+    /* BORDER */
+    border-left: 0.6dvh solid black;
+    border-top: 0.6dvh solid black;
 }
