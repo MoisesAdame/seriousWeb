@@ -49,6 +49,7 @@ function counter(position){
         turn++
         if(turn === 9){
             paragraph.innerText = 'Tie'
+            setTimeout(reStart, 3000)
         }else if(turn % 2 === 0){
             paragraph.innerText = 'X Turn.'
         }else if(turn % 2 !== 0){

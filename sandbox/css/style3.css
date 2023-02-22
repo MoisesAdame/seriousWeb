@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Gloock&family=Mynerve&display=swap');
 
+/* GENERAL CONFIG */
 body{
     margin: 0;
     text-align: center;
@@ -7,18 +8,39 @@ body{
 
 h1{
     font-family: Gloock;
+    font-size: 4.5rem;
+    margin-bottom: 0;
+    color: #66BFBF;
+    line-height: 2;
+}
+
+h2{
+    font-family: Mynerve;
+    font-size: 2.5rem;
+    color: #66BFBF;
+    font-weight: normal;
+}
+
+h3, a{
+    font-family: Mynerve;
+    color: #11999E;
 }
 
 p{
     font-family: Mynerve;
+    color: #66BFBF;
+}
+
+/* HEADER CONFIG */
+span{
+    text-decoration: underline;
 }
 
 .top-container{
     margin: 0;
-    background-color: #9ca9a9;
+    background-color: rgb(233, 245, 245);
     height: auto;
-    padding: 10px;
-    
+    padding: 60px 0 0 0;
 }
 
 .top-cloud{
@@ -30,14 +52,24 @@ p{
     position: absolute;
 }
 
-.middle-container{
-    height: 200px;
-    width: 200px;
-    background-color: blue;
+/* PROFILE & SKILLS CONFIG */
+.skill-row{
+    /* DIMENSIONS */
+    width: 50dvw;
+
+    /* CENTERING */
+    margin: 100px auto 100px auto;
+
+    /* TEXT ALIGN */
+    text-align: left;
+    line-height: 2;
 }
 
-.bottom-container{
-    height: 200px;
-    width: 200px;
-    background-color: red;
+.skill-img{
+    /* DIMENSIONS OF IMAGES */
+    width: 25%;
+    margin-right: 30px;
+    
+    /* POSITION WITH RESPECT TO TEXT */
+    float: left;
 }
