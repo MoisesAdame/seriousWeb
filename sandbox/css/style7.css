@@ -1,3 +1,26 @@
 #logo{
     height: 7dvh;
 }
+
+.parent {
+    /* FLEX AND FLEX PROPERTIES */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+
+    /* DIMENSIONS AND COLOR */
+    height: 600px; /* Or whatever */
+    background-color: violet;
+}
+
+.child {
+    width: 100px;  /* Or whatever */
+    height: 100px; /* Or whatever */
+    /* margin: auto 25px;    Magic! */
+
+    border: solid black;
+
+    background-color: greenyellow;
+}
