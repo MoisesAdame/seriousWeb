@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Hanken Grotesk", sans-serif;
+  display: flex;
+  align-content: center;
+  width: 100dvw;
+  height: 100dvh;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: auto;
+  border-radius: 40px;
+  box-shadow: 5px 5px 2.5px #c4c4c4;
+}
+.grid__result, .grid__summary {
+  padding: 40px;
+}
+.grid__result {
+  background: hsl(252, 100%, 67%);
+  background: linear-gradient(180deg, hsl(252, 100%, 67%) 0%, hsl(241, 81%, 54%));
+  border-radius: 40px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.grid__circle {
+  background: rgb(131, 58, 180);
+  background: linear-gradient(180deg, hsl(256, 72%, 46%) 0%, hsla(241, 72%, 46%, 0));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+}
+
+.ability__reaction, .ability__memory, .ability__verbal, .ability__visual {
+  display: flex;
+  padding: auto;
+  border: solid black;
+  margin: 5px;
+  border-radius: 30px;
+}/*# sourceMappingURL=styles.css.map */

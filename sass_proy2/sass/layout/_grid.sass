@@ -1,0 +1,46 @@
+.grid
+    // Grid for desktop
+    display: grid
+    grid-template-columns: 1fr 1fr
+
+    // Vertical centering
+    margin: auto
+
+    // Border Settings
+    border-radius: 40px
+    box-shadow: 5px 5px 2.5px #c4c4c4
+
+    &__result, &__summary
+        padding: 40px
+
+    &__result
+        // Background Color
+        background: hsl(252, 100%, 67%)
+        background: linear-gradient(180deg, hsl(252, 100%, 67%) 0%, hsl(241, 81%, 54%))
+
+        // Border Settings
+        border-radius: 40px
+
+        // Font settings
+        color: white
+
+        // Centering things inside
+        display: flex
+        flex-direction: column
+        align-items: center
+        
+    &__circle
+        // Background Color
+        background: rgb(131,58,180)
+        background: linear-gradient(180deg, hsla(256, 72%, 46%, 1) 0%, hsla(241, 72%, 46%, 0))
+
+        // Centering things inside
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+
+        // Making it a circle
+        border-radius: 50%
+        height: 250px
+        width: 250px
