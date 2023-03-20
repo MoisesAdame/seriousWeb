@@ -1,0 +1,33 @@
+// Author: Moisés Adame-Aguilar (大摩西)
+// Date: March 19, 2023 (二零二三年三月十九日)
+// Description: Boilerplate SASS Script.
+
+// Importing utils
+@use "../utils"
+
+html
+    box-sizing: border-box
+    font-size: 100%
+
+*, *::before, *::after
+    box-sizing: inherit
+
+body
+    // Dimensions
+    width: 100vw
+    height: 100vh
+
+    // Centering conetent inside.
+    display: flex
+    align-items: center
+
+    // Font Settings
+    font-family: utils.$font-stack
+    color: utils.$font-color
+
+    // Background Settings
+    background-color: utils.$background-color
+
+    // Box Model Re-Setting
+    margin: 0
+    padding: 0
