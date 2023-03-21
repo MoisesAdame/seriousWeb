@@ -1,14 +1,5 @@
+@use 'sliderButton'
+@use '../utils'
+
 .button-1
-    // Appearance pre-hover
-    color: #FFCE00
-    border: 3px solid #FFCE00
-    background: none
-
-.button-1:hover
-    // Appearance hover
-    background: #FFCE00
-    color: white
-
-.button-1:active
-    // Appearance on click
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
+    @include sliderButton.slider-button(utils.$yellow, full)

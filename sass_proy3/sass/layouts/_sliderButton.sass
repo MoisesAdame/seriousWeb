@@ -1,0 +1,42 @@
+@mixin slider-button($theme, $position)
+    // Appearance pre-hover
+    color: $theme
+    border: 3px solid $theme
+    background: none
+
+    @if $position == right
+        background-image: linear-gradient(90deg, transparent 50%, $theme 50%)
+        background-size: 210%
+        background-position: 0%
+        &:#{hover}
+            background-position: 100%
+    @else if $position == left
+        background-image: linear-gradient(90deg, $theme 50%, transparent 50%)
+        background-size: 210%
+        background-position: 100%
+        &:#{hover}
+            background-position: 0%
+    @else if $position == up
+        background-image: linear-gradient(0deg, transparent 50%, $theme 50%)
+        background-size: 100% 200%
+        background-position: 0% 100%
+        &:#{hover}
+            background-position: 0% 0%
+    @else if $position == down
+        background-image: linear-gradient(0deg, $theme 50%, transparent 50%,)
+        background-size: 100% 200%
+        background-position: 0% 0%
+        &:#{hover}
+            background-position: 0% 100%
+    @else
+        &:#{hover}
+            // Appearance hover
+            background: $theme
+            color: white
+    
+    &:#{hover}
+        color: white
+    
+    &:#{active}
+        // Appearance on click
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)

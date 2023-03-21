@@ -1,19 +1,5 @@
+@use 'sliderButton'
+@use '../utils'
+
 .button-3
-    // Appearance
-    color: #68DEA0
-    border: 3px solid #68DEA0
-    background: none
-
-    // Unseen background
-    background-image: linear-gradient(0deg, transparent 50%, #68DEA0 50%)
-    background-size: 100% 200%
-    background-position: 100% 100%
-
-.button-3:hover
-    // See background
-    color: white
-    background-position: 100% 0%
-
-.button-3:active
-    // Appearance on click
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
+    @include sliderButton.slider-button(utils.$cyan, up)
