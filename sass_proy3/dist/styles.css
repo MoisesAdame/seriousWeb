@@ -72,15 +72,15 @@ input[type=button] {
 }
 
 .button-2 {
-  color: #FE4880;
-  border: 3px solid #FE4880;
+  color: black;
+  border: 3px solid black;
   background: none;
-  background-image: linear-gradient(90deg, transparent 50%, #FE4880 50%);
+  background-image: linear-gradient(90deg, black 50%, transparent 50%);
   background-size: 210%;
-  background-position: 0%;
+  background-position: 100%;
 }
 .button-2:hover {
-  background-position: 100%;
+  background-position: 0%;
 }
 .button-2:hover {
   color: white;
@@ -93,12 +93,10 @@ input[type=button] {
   color: #68DEA0;
   border: 3px solid #68DEA0;
   background: none;
-  background-image: linear-gradient(0deg, transparent 50%, #68DEA0 50%);
-  background-size: 100% 200%;
-  background-position: 0% 100%;
 }
 .button-3:hover {
-  background-position: 0% 0%;
+  background: #68DEA0;
+  color: white;
 }
 .button-3:hover {
   color: white;
