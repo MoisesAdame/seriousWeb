@@ -1,0 +1,11 @@
+{
+    "name": "WTHEXT",
+    "version": "1.0.0",
+    "description": "Api calling.",
+    "manifest_version": 3,
+    "author": "Moisés Adame Aguilar",
+    "action":{
+        "default_popup": "index.html",
+        "default_title": "WTHEXT"
+    }
+}

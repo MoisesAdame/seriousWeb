@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Extension</title>
+    
+    <!-- JS -->
+    <script type="text/javascript" src="js/apiHandler.js"></script>
+
+    <!-- LEAFLET -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+    integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+    crossorigin=""/>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="dist/index.css">
+    
+    
+</head>
+<body onload="getLocation()">
+    <div id="card">
+        <div id="loader-div">
+            <div id="loader"></div>
+        </div>
+        <div id="summary">
+            <p id="date"></p>
+            <h1 id="city"></h1>
+            <div id="img-temp">
+                <img id="image">
+                <p id="temperature"></p>
+            </div>
+            <p id="feeling"></p>
+            <div id="addons">
+                <p id="humidity"></p>
+                <p id="visibility"></p>
+                <p id="pressure"></p>
+            </div>
+        </div>
+        <div id="map"></div>
+    </div>
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+    integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+    crossorigin=""></script>
+</body>
+</html>
